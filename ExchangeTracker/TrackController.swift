@@ -10,6 +10,7 @@ import UIKit
 
 class TrackController: UIViewController {
 
+//Implementation of NSUserDefaults
     let defaults = NSUserDefaults.standardUserDefaults()
     
 //IBOutlets for Track
@@ -86,22 +87,5 @@ class TrackController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-//    @IBAction func changeFatAmount(sender: UIStepper) {
-//        
-//        sender.value = sender.value > 10 ? 0 : sender.value
-//        fatAmountField.text = Int(sender.value).description
-//        
-//        //Implement Time function
-//        //        let alertController = UIAlertController(title: "iOScreator", message:
-//        //            "Hello, world!", preferredStyle: UIAlertControllerStyle.Alert)
-//        //        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-//        //
-//        //        self.presentViewController(alertController, animated: true, completion: nil)
-//    }
-    
-    
-    
-    
-    
+ 
 }
