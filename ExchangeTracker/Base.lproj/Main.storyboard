@@ -219,7 +219,7 @@
                         <outlet property="fatSlider" destination="rOW-Sd-bx4" id="27x-sB-gnk"/>
                         <outlet property="fatSliderText" destination="8Ff-BI-XzG" id="gTF-w9-6xE"/>
                         <outlet property="fruitSlider" destination="eTk-Pw-lhf" id="MA7-rN-rfK"/>
-                        <outlet property="fruitSliderText" destination="d6t-d7-paq" id="kcA-U1-hY4"/>
+                        <outlet property="fruitSliderText" destination="Ojc-tB-rGm" id="IcS-iI-r2A"/>
                         <outlet property="proteinSlider" destination="Mti-Cy-MAW" id="2CY-Of-VGp"/>
                         <outlet property="proteinSliderText" destination="QGK-8o-kIw" id="dNf-Q3-slo"/>
                         <outlet property="starchSlider" destination="hON-SO-0NC" id="VNy-GU-x4a"/>
@@ -291,7 +291,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="e9I-iV-Zii" userLabel="FatStepper">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="e9I-iV-Zii" userLabel="FatStepper">
                                                 <rect key="frame" x="390" y="1" width="94" height="29"/>
                                                 <connections>
                                                     <action selector="changeFatStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="IG3-jS-rQh"/>
@@ -319,7 +319,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Phj-6H-BSf" userLabel="DairyStepper">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Phj-6H-BSf" userLabel="DairyStepper">
                                                 <rect key="frame" x="390" y="1" width="94" height="29"/>
                                                 <connections>
                                                     <action selector="changeDairyStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="c3v-T6-rxN"/>
@@ -347,7 +347,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ox8-H8-aZa" userLabel="ProteinStepper">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ox8-H8-aZa" userLabel="ProteinStepper">
                                                 <rect key="frame" x="390" y="1" width="94" height="29"/>
                                                 <connections>
                                                     <action selector="changeProteinStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="CGh-GF-0Ca"/>
@@ -375,7 +375,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7lP-vz-0x8" userLabel="FruitStepper">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7lP-vz-0x8" userLabel="FruitStepper">
                                                 <rect key="frame" x="390" y="1" width="94" height="29"/>
                                                 <connections>
                                                     <action selector="changeFruitStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="Nns-eI-rI8"/>
@@ -403,7 +403,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fq3-27-pdv" userLabel="VegetableStepper">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fq3-27-pdv" userLabel="VegetableStepper">
                                                 <rect key="frame" x="390" y="1" width="94" height="29"/>
                                                 <connections>
                                                     <action selector="changeVegetableStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="IHd-12-n87"/>
@@ -431,7 +431,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7Os-HT-gRD" userLabel="StarchStepper">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7Os-HT-gRD" userLabel="StarchStepper">
                                                 <rect key="frame" x="390" y="1" width="94" height="29"/>
                                                 <connections>
                                                     <action selector="changeStarchStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="0Sz-xt-R5l"/>

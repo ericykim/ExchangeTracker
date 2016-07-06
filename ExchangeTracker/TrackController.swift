@@ -10,6 +10,8 @@ import UIKit
 
 class TrackController: UIViewController {
 
+    let defaults = NSUserDefaults.standardUserDefaults()
+    
 //IBOutlets for Track
     @IBOutlet weak var fatTextField: UITextField!
     @IBOutlet weak var fatStepper: UIStepper!
@@ -29,29 +31,38 @@ class TrackController: UIViewController {
     @IBOutlet weak var starchTextField: UITextField!
     @IBOutlet weak var starchStepper: UIStepper!
     
-
+//Variables for NSUserDefaults
+    let fatNumber = "fatNumber"
+    let dairyNumber = "dairyNumber"
+    let proteinNumber = "proteinNumber"
+    let fruitNumber = "fruitNumber"
+    let vegetableNumber = "vegetableNumber"
+    let starchNumber = "starchNumber"
     
 //IBActions for Stepper
     @IBAction func changeFatStepper(sender: UIStepper) {
         fatTextField.text = Int(sender.value).description
-        if sender.value == 10 {
-            sender.value = 0
-        }
+        fatStepper.maximumValue = Double(defaults.integerForKey(fatNumber))
     }
     @IBAction func changeDairyStepper(sender: UIStepper) {
         dairyTextField.text = Int(sender.value).description
+        dairyStepper.maximumValue = Double(defaults.integerForKey(dairyNumber))
     }
     @IBAction func changeProteinStepper(sender: UIStepper) {
         proteinTextField.text = Int(sender.value).description
+        proteinStepper.maximumValue = Double(defaults.integerForKey(proteinNumber))
     }
     @IBAction func changeFruitStepper(sender: UIStepper) {
         fruitTextField.text = Int(sender.value).description
+        fruitStepper.maximumValue = Double(defaults.integerForKey(fruitNumber))
     }
     @IBAction func changeVegetableStepper(sender: UIStepper) {
         vegetableTextField.text = Int(sender.value).description
+        vegetableStepper.maximumValue = Double(defaults.integerForKey(vegetableNumber))
     }
     @IBAction func changeStarchStepper(sender: UIStepper) {
         starchTextField.text = Int(sender.value).description
+        starchStepper.maximumValue = Double(defaults.integerForKey(starchNumber))
     }
     
 
@@ -61,6 +72,13 @@ class TrackController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        fatTextField.text = String(defaults.integerForKey(fatNumber))
+        dairyTextField.text = String(defaults.integerForKey(dairyNumber))
+        proteinTextField.text = String(defaults.integerForKey(proteinNumber))
+        fruitTextField.text = String(defaults.integerForKey(fruitNumber))
+        vegetableTextField.text = String(defaults.integerForKey(vegetableNumber))
+        starchTextField.text = String(defaults.integerForKey(starchNumber))
+
         
     }
     
