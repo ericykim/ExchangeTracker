@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B4751C511D2D8154004477CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4751C501D2D8154004477CC /* AppDelegate.swift */; };
-		B4751C531D2D8154004477CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4751C521D2D8154004477CC /* ViewController.swift */; };
+		B4751C531D2D8154004477CC /* TrackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4751C521D2D8154004477CC /* TrackController.swift */; };
 		B4751C561D2D8154004477CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4751C541D2D8154004477CC /* Main.storyboard */; };
 		B4751C581D2D8154004477CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4751C571D2D8154004477CC /* Assets.xcassets */; };
 		B4751C5B1D2D8154004477CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4751C591D2D8154004477CC /* LaunchScreen.storyboard */; };
+		B4751C671D2DAC5F004477CC /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4751C661D2DAC5F004477CC /* SettingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B4751C4D1D2D8154004477CC /* ExchangeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4751C501D2D8154004477CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4751C521D2D8154004477CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4751C521D2D8154004477CC /* TrackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackController.swift; path = ../TrackController.swift; sourceTree = "<group>"; };
 		B4751C551D2D8154004477CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4751C571D2D8154004477CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4751C5A1D2D8154004477CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4751C5C1D2D8154004477CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4751C661D2DAC5F004477CC /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingController.swift; path = ../SettingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		B4751C4F1D2D8154004477CC /* ExchangeTracker */ = {
 			isa = PBXGroup;
 			children = (
+				B4751C681D2DAEFE004477CC /* ViewControllers */,
 				B4751C501D2D8154004477CC /* AppDelegate.swift */,
-				B4751C521D2D8154004477CC /* ViewController.swift */,
 				B4751C541D2D8154004477CC /* Main.storyboard */,
 				B4751C571D2D8154004477CC /* Assets.xcassets */,
 				B4751C591D2D8154004477CC /* LaunchScreen.storyboard */,
 				B4751C5C1D2D8154004477CC /* Info.plist */,
 			);
 			path = ExchangeTracker;
+			sourceTree = "<group>";
+		};
+		B4751C681D2DAEFE004477CC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B4751C661D2DAC5F004477CC /* SettingController.swift */,
+				B4751C521D2D8154004477CC /* TrackController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4751C531D2D8154004477CC /* ViewController.swift in Sources */,
+				B4751C671D2DAC5F004477CC /* SettingController.swift in Sources */,
+				B4751C531D2D8154004477CC /* TrackController.swift in Sources */,
 				B4751C511D2D8154004477CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +301,7 @@
 				B4751C611D2D8154004477CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
