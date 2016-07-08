@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="y5m-K7-wXq">
-                                <rect key="frame" x="25" y="70" width="550" height="305"/>
+                                <rect key="frame" x="25" y="100" width="550" height="305"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LPD-WH-4KN">
                                         <rect key="frame" x="0.0" y="0.0" width="550" height="30"/>
@@ -207,12 +207,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="y5m-K7-wXq" firstAttribute="top" secondItem="Kqz-Wk-swy" secondAttribute="bottom" constant="50" id="2PX-ab-C9C"/>
+                            <constraint firstItem="y5m-K7-wXq" firstAttribute="top" secondItem="Kqz-Wk-swy" secondAttribute="bottom" constant="80" id="2PX-ab-C9C"/>
                             <constraint firstItem="y5m-K7-wXq" firstAttribute="leading" secondItem="Tzk-6R-sjo" secondAttribute="leading" constant="25" id="OGy-zr-lea"/>
                             <constraint firstAttribute="trailing" secondItem="y5m-K7-wXq" secondAttribute="trailing" constant="25" id="wC7-Zk-pyC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="HEW-iG-p0v" userLabel="Settings"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="ic_settings_36pt" id="HEW-iG-p0v" userLabel="Settings"/>
                     <connections>
                         <outlet property="dairySlider" destination="28M-18-zp1" id="PGq-7Z-KPB"/>
                         <outlet property="dairySliderText" destination="wXf-tb-tiX" id="jEm-Mh-01Z"/>
@@ -263,13 +263,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="bpX-1A-jUN">
-                                <rect key="frame" x="50" y="70" width="500" height="305"/>
+                                <rect key="frame" x="25" y="100" width="550" height="305"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="j6u-o7-qMN">
-                                        <rect key="frame" x="8" y="0.0" width="484" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="550" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhb-1L-lEj" userLabel="Fat">
-                                                <rect key="frame" x="0.0" y="0.0" width="340" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="406" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="A4P-67-kbo"/>
                                                     <constraint firstAttribute="height" constant="30" id="sDh-iZ-6aF"/>
@@ -284,15 +284,15 @@
                                                 </variation>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i6q-XT-mYu" userLabel="FatTextField">
-                                                <rect key="frame" x="340" y="0.0" width="50" height="30"/>
+                                                <rect key="frame" x="406" y="0.0" width="50" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="jcZ-cz-b1J"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="e9I-iV-Zii" userLabel="FatStepper">
-                                                <rect key="frame" x="390" y="1" width="94" height="29"/>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="e9I-iV-Zii" userLabel="FatStepper">
+                                                <rect key="frame" x="456" y="0.5" width="94" height="29"/>
                                                 <connections>
                                                     <action selector="changeFatStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="IG3-jS-rQh"/>
                                                 </connections>
@@ -300,10 +300,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v6y-28-1oE">
-                                        <rect key="frame" x="8" y="55" width="484" height="30"/>
+                                        <rect key="frame" x="0.0" y="55" width="550" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dairy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URd-wB-QJ5" userLabel="Dairy">
-                                                <rect key="frame" x="0.0" y="0.0" width="340" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="406" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="ZAm-Xb-msf"/>
                                                 </constraints>
@@ -312,15 +312,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jMh-My-YMi" userLabel="DairyTextField">
-                                                <rect key="frame" x="340" y="0.0" width="50" height="30"/>
+                                                <rect key="frame" x="406" y="0.0" width="50" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="H9u-QO-3u9"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Phj-6H-BSf" userLabel="DairyStepper">
-                                                <rect key="frame" x="390" y="1" width="94" height="29"/>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Phj-6H-BSf" userLabel="DairyStepper">
+                                                <rect key="frame" x="456" y="0.5" width="94" height="29"/>
                                                 <connections>
                                                     <action selector="changeDairyStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="c3v-T6-rxN"/>
                                                 </connections>
@@ -328,10 +328,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yso-te-7Ou">
-                                        <rect key="frame" x="8" y="110" width="484" height="30"/>
+                                        <rect key="frame" x="0.0" y="110" width="550" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5p-EN-z5q" userLabel="Protein">
-                                                <rect key="frame" x="0.0" y="0.0" width="340" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="406" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Zng-5B-OQF"/>
                                                 </constraints>
@@ -340,7 +340,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="287-kR-ZpB" userLabel="ProteinTextField">
-                                                <rect key="frame" x="340" y="0.0" width="50" height="30"/>
+                                                <rect key="frame" x="406" y="0.0" width="50" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="MNI-IO-7iP"/>
                                                 </constraints>
@@ -348,7 +348,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ox8-H8-aZa" userLabel="ProteinStepper">
-                                                <rect key="frame" x="390" y="1" width="94" height="29"/>
+                                                <rect key="frame" x="456" y="0.5" width="94" height="29"/>
                                                 <connections>
                                                     <action selector="changeProteinStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="CGh-GF-0Ca"/>
                                                 </connections>
@@ -356,10 +356,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kbo-NB-Z3w">
-                                        <rect key="frame" x="8" y="165" width="484" height="30"/>
+                                        <rect key="frame" x="0.0" y="165" width="550" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNl-BW-bYb" userLabel="Fruits">
-                                                <rect key="frame" x="0.0" y="0.0" width="340" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="406" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="y8t-Ik-NpE"/>
                                                 </constraints>
@@ -368,15 +368,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IKg-EU-ESA" userLabel="FruitTextField">
-                                                <rect key="frame" x="340" y="0.0" width="50" height="30"/>
+                                                <rect key="frame" x="406" y="0.0" width="50" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="SdZ-yO-l9F"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7lP-vz-0x8" userLabel="FruitStepper">
-                                                <rect key="frame" x="390" y="1" width="94" height="29"/>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="7lP-vz-0x8" userLabel="FruitStepper">
+                                                <rect key="frame" x="456" y="0.5" width="94" height="29"/>
                                                 <connections>
                                                     <action selector="changeFruitStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="Nns-eI-rI8"/>
                                                 </connections>
@@ -384,10 +384,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6jy-Wb-a9j">
-                                        <rect key="frame" x="8" y="220" width="484" height="30"/>
+                                        <rect key="frame" x="0.0" y="220" width="550" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegetables" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xff-8z-UfU" userLabel="Vegetables">
-                                                <rect key="frame" x="0.0" y="0.0" width="340" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="406" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="kA8-IT-UYd"/>
                                                 </constraints>
@@ -396,15 +396,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c0O-nB-Vka" userLabel="VegetableTextField">
-                                                <rect key="frame" x="340" y="0.0" width="50" height="30"/>
+                                                <rect key="frame" x="406" y="0.0" width="50" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="Etj-5i-p8r"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fq3-27-pdv" userLabel="VegetableStepper">
-                                                <rect key="frame" x="390" y="1" width="94" height="29"/>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="fq3-27-pdv" userLabel="VegetableStepper">
+                                                <rect key="frame" x="456" y="0.5" width="94" height="29"/>
                                                 <connections>
                                                     <action selector="changeVegetableStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="IHd-12-n87"/>
                                                 </connections>
@@ -412,10 +412,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PW6-Ib-Jze">
-                                        <rect key="frame" x="8" y="275" width="484" height="30"/>
+                                        <rect key="frame" x="0.0" y="275" width="550" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nH-Tg-B5z" userLabel="Starch">
-                                                <rect key="frame" x="0.0" y="0.0" width="340" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="406" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="fXK-5d-bJJ"/>
                                                 </constraints>
@@ -424,15 +424,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PsC-ru-syi" userLabel="StarchTextField">
-                                                <rect key="frame" x="340" y="0.0" width="50" height="30"/>
+                                                <rect key="frame" x="406" y="0.0" width="50" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="214-ZO-rg4"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7Os-HT-gRD" userLabel="StarchStepper">
-                                                <rect key="frame" x="390" y="1" width="94" height="29"/>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Os-HT-gRD" userLabel="StarchStepper">
+                                                <rect key="frame" x="456" y="0.5" width="94" height="29"/>
                                                 <connections>
                                                     <action selector="changeStarchStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="0Sz-xt-R5l"/>
                                                 </connections>
@@ -441,29 +441,29 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="6jy-Wb-a9j" firstAttribute="leading" secondItem="bpX-1A-jUN" secondAttribute="leading" constant="8" id="3Z2-Qf-ubG"/>
-                                    <constraint firstAttribute="trailing" secondItem="kbo-NB-Z3w" secondAttribute="trailing" constant="8" id="4So-oH-0Cl"/>
-                                    <constraint firstItem="kbo-NB-Z3w" firstAttribute="leading" secondItem="bpX-1A-jUN" secondAttribute="leading" constant="8" id="6Ak-EL-eNR"/>
-                                    <constraint firstItem="v6y-28-1oE" firstAttribute="leading" secondItem="bpX-1A-jUN" secondAttribute="leading" constant="8" id="NQ5-dY-XbO"/>
-                                    <constraint firstAttribute="trailing" secondItem="v6y-28-1oE" secondAttribute="trailing" constant="8" id="Oiw-Y2-0CW"/>
-                                    <constraint firstAttribute="trailing" secondItem="yso-te-7Ou" secondAttribute="trailing" constant="8" id="QCu-L0-yG3"/>
-                                    <constraint firstAttribute="trailing" secondItem="j6u-o7-qMN" secondAttribute="trailing" constant="8" id="YV9-hW-LYq"/>
-                                    <constraint firstItem="yso-te-7Ou" firstAttribute="leading" secondItem="bpX-1A-jUN" secondAttribute="leading" constant="8" id="iUi-e9-HBm"/>
-                                    <constraint firstItem="PW6-Ib-Jze" firstAttribute="leading" secondItem="bpX-1A-jUN" secondAttribute="leading" constant="8" id="mzr-Wf-cCz"/>
-                                    <constraint firstAttribute="trailing" secondItem="PW6-Ib-Jze" secondAttribute="trailing" constant="8" id="v0S-1J-jCv"/>
-                                    <constraint firstAttribute="trailing" secondItem="6jy-Wb-a9j" secondAttribute="trailing" constant="8" id="w5S-3L-HM4"/>
-                                    <constraint firstItem="j6u-o7-qMN" firstAttribute="leading" secondItem="bpX-1A-jUN" secondAttribute="leading" constant="8" id="zJQ-M1-630"/>
+                                    <constraint firstItem="6jy-Wb-a9j" firstAttribute="leading" secondItem="bpX-1A-jUN" secondAttribute="leading" id="3Z2-Qf-ubG"/>
+                                    <constraint firstAttribute="trailing" secondItem="kbo-NB-Z3w" secondAttribute="trailing" id="4So-oH-0Cl"/>
+                                    <constraint firstItem="kbo-NB-Z3w" firstAttribute="leading" secondItem="bpX-1A-jUN" secondAttribute="leading" id="6Ak-EL-eNR"/>
+                                    <constraint firstItem="v6y-28-1oE" firstAttribute="leading" secondItem="bpX-1A-jUN" secondAttribute="leading" id="NQ5-dY-XbO"/>
+                                    <constraint firstAttribute="trailing" secondItem="v6y-28-1oE" secondAttribute="trailing" id="Oiw-Y2-0CW"/>
+                                    <constraint firstAttribute="trailing" secondItem="yso-te-7Ou" secondAttribute="trailing" id="QCu-L0-yG3"/>
+                                    <constraint firstAttribute="trailing" secondItem="j6u-o7-qMN" secondAttribute="trailing" id="YV9-hW-LYq"/>
+                                    <constraint firstItem="yso-te-7Ou" firstAttribute="leading" secondItem="bpX-1A-jUN" secondAttribute="leading" id="iUi-e9-HBm"/>
+                                    <constraint firstItem="PW6-Ib-Jze" firstAttribute="leading" secondItem="bpX-1A-jUN" secondAttribute="leading" id="mzr-Wf-cCz"/>
+                                    <constraint firstAttribute="trailing" secondItem="PW6-Ib-Jze" secondAttribute="trailing" id="v0S-1J-jCv"/>
+                                    <constraint firstAttribute="trailing" secondItem="6jy-Wb-a9j" secondAttribute="trailing" id="w5S-3L-HM4"/>
+                                    <constraint firstItem="j6u-o7-qMN" firstAttribute="leading" secondItem="bpX-1A-jUN" secondAttribute="leading" id="zJQ-M1-630"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="bpX-1A-jUN" secondAttribute="trailing" constant="50" id="4X4-YL-UD4"/>
-                            <constraint firstItem="bpX-1A-jUN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="5dd-AK-ga1"/>
-                            <constraint firstItem="bpX-1A-jUN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="P0k-2T-7xq"/>
+                            <constraint firstAttribute="trailing" secondItem="bpX-1A-jUN" secondAttribute="trailing" constant="25" id="4X4-YL-UD4"/>
+                            <constraint firstItem="bpX-1A-jUN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="5dd-AK-ga1"/>
+                            <constraint firstItem="bpX-1A-jUN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="P0k-2T-7xq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Track" id="AG3-Gg-eCB" userLabel="Track"/>
+                    <tabBarItem key="tabBarItem" title="Track" image="ic_assignment_36pt" id="AG3-Gg-eCB" userLabel="Track"/>
                     <connections>
                         <outlet property="dairyStepper" destination="Phj-6H-BSf" id="8ut-wd-Aco"/>
                         <outlet property="dairyTextField" destination="jMh-My-YMi" id="8nt-sh-cEW"/>
@@ -484,4 +484,8 @@
             <point key="canvasLocation" x="-151" y="-22"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_assignment_36pt" width="36" height="36"/>
+        <image name="ic_settings_36pt" width="36" height="36"/>
+    </resources>
 </document>

@@ -74,6 +74,16 @@ class SettingController: UIViewController {
         print(defaults.integerForKey(starchNumber))
     }
     
+// Notification BUtton 
+    
+    @IBOutlet weak var notification: UIButton!
+    @IBAction func notificationAction(sender: AnyObject) {
+        print("Hello World")
+        
+
+        
+    }
+
     
     
     
@@ -93,6 +103,7 @@ class SettingController: UIViewController {
         fruitSliderText.text = String(defaults.integerForKey(fruitNumber))
         vegetableSliderText.text = String(defaults.integerForKey(vegetableNumber))
         starchSliderText.text = String(defaults.integerForKey(starchNumber))
+
     }
 
     override func didReceiveMemoryWarning() {
